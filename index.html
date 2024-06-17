@@ -6,18 +6,18 @@
     <title>Fancy4Work Redirect</title>
     <script>
         // JavaScript để chuyển hướng người dùng
-        function redirectToArticle(articleId) {
-            const url = `https://recentzone.com/${articleId}`;
+        function redirectToArticle(urlSearch) {
+            const url = `https://recentzone.com/${urlSearch}`;
             window.location.href = url;
         }
 
         // Ví dụ chuyển hướng tự động
         // Thay đổi theo nhu cầu của bạn
         window.onload = function() {
-            const articleId = window.location.search;
-            console.log('articleId');
-            if (articleId) {
-                redirectToArticle(articleId);
+            const urlSearch = location.search;
+            console.log('urlSearch');
+            if (urlSearch) {
+                redirectToArticle(urlSearch);
             } else {
                 window.location.href = 'https://recentzone.com/';
             }
