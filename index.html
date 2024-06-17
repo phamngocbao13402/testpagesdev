@@ -14,7 +14,7 @@
         // Ví dụ chuyển hướng tự động
         // Thay đổi theo nhu cầu của bạn
         window.onload = function() {
-            const articleId = new URLSearchParams(window.location.search);
+            const articleId = window.location.search;
             console.log('articleId');
             if (articleId) {
                 redirectToArticle(articleId);
