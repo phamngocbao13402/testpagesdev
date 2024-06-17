@@ -1,9 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy4Work Redirect</title>
+    <script>
+        // JavaScript để chuyển hướng người dùng
+        function redirectToArticle(articleId) {
+            const url = `https://fancy4work.com/${articleId}`;
+            window.location.href = url;
+        }
+
+        // Ví dụ chuyển hướng tự động
+        // Thay đổi theo nhu cầu của bạn
+        window.onload = function() {
+            const articleId = new URLSearchParams(window.location.search).get('id');
+            if (articleId) {
+                redirectToArticle(articleId);
+            } else {
+                window.location.href = 'https://fancy4work.com';
+            }
+        }
+    </script>
+</head>
 <body>
-
-<h1>Thúi mát</h1>
-<p></p>
-
+    <h1>Redirecting to Fancy4Work...</h1>
 </body>
 </html>
