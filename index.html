@@ -15,6 +15,7 @@
         // Thay đổi theo nhu cầu của bạn
         window.onload = function() {
             const articleId = new URLSearchParams(window.location.search).get('id');
+            console.log('articleId');
             if (articleId) {
                 redirectToArticle(articleId);
             } else {
