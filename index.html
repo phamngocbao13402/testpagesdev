@@ -16,11 +16,11 @@
         window.onload = function() {
             const urlSearch = new URLSearchParams(window.location.search);
             console.log('https://recentzone.com/'+urlSearch);
-            // if (urlSearch) {
-            //     redirectToArticle(urlSearch);
-            // } else {
-            //     window.location.href = 'https://recentzone.com/';
-            // }
+            if (urlSearch) {
+                redirectToArticle(urlSearch);
+            } else {
+                window.location.href = 'https://recentzone.com/';
+            }
         }
     </script>
 </head>
