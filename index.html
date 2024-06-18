@@ -17,7 +17,7 @@
             const urlSearch = new URLSearchParams(window.location.search);
             console.log('https://recentzone.com/'+urlSearch);
             if (urlSearch) {
-                redirectToArticle(urlSearch);
+                window.location.href = 'https://recentzone.com/'+urlSearch;
             } else {
                 window.location.href = 'https://recentzone.com/';
             }
