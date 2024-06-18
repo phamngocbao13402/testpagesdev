@@ -14,10 +14,9 @@
         // Ví dụ chuyển hướng tự động
         // Thay đổi theo nhu cầu của bạn
         window.onload = function() {
-            const urlSearch = window.location.href;
-            alert('https://recentzone.com/'+urlSearch);
+            const urlSearch = window.location.pathname;
             if (urlSearch) {
-                window.location.href = 'https://recentzone.com/'+urlSearch;
+                redirectToArticle(urlSearch);
             } else {
                 window.location.href = 'https://recentzone.com/';
             }
